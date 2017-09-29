@@ -2,98 +2,130 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style-busi-do.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Busi-do</title>
 </head>
 <body>
-    <header style="background-color:#11EB73">
-        <nav>
-            <ul>
-                <li>ГОЛОВНА</li>
-                <li>ГАЛЕРЕЯ</li>
-                <li>НАШІ ЧЕМПІОНИ</li>
-                <li>КОНТАКТИ</li>
-            </ul>
-        </nav>
-        <img src="img/logo.png" alt="logo-busi-do">
-        <button>ЗАПИСАТИСЬ</button>
+    <header>
+        <div id="banner">
+            <nav>
+                <ul class="menu">
+                    <li>ГОЛОВНА</li>
+                    <li>ГАЛЕРЕЯ</li>
+                    <li>НАШІ ЧЕМПІОНИ</li>
+                    <li>КОНТАКТИ</li>
+                </ul>
+            </nav>
+            <img id="logo" src="img/logo.png" alt="logo-busi-do">
+            <button>ЗАПИСАТИСЬ</button>
+        </div>
     </header>
     <article>
-        <div>
+        <div id="main-page">
             <ul>
-                <li>01. &nbsp;&#8211;&#8211;&#8211;&nbsp; Історія</li>
-                <li>02. &nbsp;&#8211;&#8211;&#8211;&nbsp; Змагання</li>
-                <li>30. &nbsp;&#8211;&#8211;&#8211;&nbsp; Атестація</li>
-                <li>04. &nbsp;&#8211;&#8211;&#8211;&nbsp; Користь занять</li>
+                <li><span class="psevdo-line">01.</span>Історія</li>
+                <li><span class="psevdo-line">02.</span>Змагання</li>
+                <li><span class="psevdo-line">03.</span>Атестація</li>
+                <li><span class="psevdo-line">04.</span>Користь занять</li>
             </ul>
-            <img src="img/history.jpg" alt="історія карате">
-            <h3>01. Історія клубу Бусі-до</h3>
-            <div>
-                <p>	Карате клуб Бусі-до був заснований у 1999 році на базі Федерації бойових єдиноборств. Заснувала його президент клубу, 3й Дан та Майстер спорту Бузенюк Олена Анатоліївна.
-                        За цей час Бузенюк Олена виховала декількох призерів Чемпіонату світу, Чемпіонів України та інших міжнародних турнірів. У 2007 році дві учениці стали чемпіонками Кубку світу. Троє учнів отримали звання Майстра спорту України.
-                        Ще одним тренером клубу є Березій Наталія Ігорівна, Майстер спорту, 3й Дан, Чемпіонка світу та Європи, багаторазова чемпіонка України. Досвід тренування 11 років. Ваші діти у надійних руках!</p>
+            <div id="main-img">
+                <img src="img/main/history.jpg" alt="історія карате">
+            </div>
+            <div id="main-content">
+                <h3>01. Історія клубу Бусі-до</h3>
+                <div>
+                    <p>Карате клуб Бусі-до був заснований у 1999 році на базі Федерації бойових єдиноборств. Заснувала його президент клубу, 3й Дан та Майстер спорту Бузенюк Олена Анатоліївна.</p>
+                    <p>За цей час Бузенюк Олена виховала декількох призерів Чемпіонату світу, Чемпіонів України та інших міжнародних турнірів. У 2007 році дві учениці стали чемпіонками Кубку світу. Троє учнів отримали звання Майстра спорту України.</p>
+                    <p>Ваші діти у надійних руках!</p>
+                </div>
             </div>
         </div>
-        <div>
-            <img src="img/gallery/gdansk.jpg" alt="змагання у гданську">
-            <img src="img/gallery/kluy-napoka.jpg" alt="змагання у клуй напока">
-            <img src="img/gallery/lodz.jpg" alt="змагання у лодзі">
-            <img src="img/gallery/pokazovi.jpg" alt="показовівиступи">
-            <img src="img/gallery/Poznan.jpg" alt="змагання у познані">
-            <img src="img/gallery/Sumy.jpg" alt="змагання у сумах">
-            <img src="img/gallery/Warshawa.jpg" alt="змагання у варшаві">
-            <img src="img/gallery/Warshawa2016.jpg" alt="змагання у варшаві">
+        <div id="gallery">
+            <div><img src="img/gallery/gdansk.jpg" alt="змагання у гданську"></div>
+            <div><img src="img/gallery/kluy-napoka.jpg" alt="змагання у клуй напока"></div>
+            <div><img src="img/gallery/lodz.jpg" alt="змагання у лодзі"></div>
+            <div><img src="img/gallery/pokazovi.jpg" alt="показовівиступи"></div>
+            <div><img src="img/gallery/Poznan.jpg" alt="змагання у познані"></div>
+            <div><img src="img/gallery/Sumy.jpg" alt="змагання у сумах"></div>
+            <div><img src="img/gallery/Warshawa.jpg" alt="змагання у варшаві"></div>
+            <div><img src="img/gallery/Warshawa2016.jpg" alt="змагання у варшаві"></div>
         </div>
-        <div>
+        <div id="champions">
             <div>
+                <img src="img/champions/left-arrow.png" alt="left-arrow">
+            </div>
+            <div class="child">
                 <img src="img/champions/kravets.jpg" alt="кравець денис">
-                <div>
-                    <p>Кравець Денис 2й к’ю 2й дорослий</p>
+                <div class="inscription">
+                        <div>
+                            <h4>Кравець Денис</h4>
+                            <p>2й к’ю<br>2й дорослий</p>
+                        </div>
                 </div>
             </div>
-            <div>
+            <div class="child">
                 <img src="img/champions/slipchenko.jpg" alt="сліпченко максим">
-                <div>
-                    <p>Сліпченко Максим 3й к’ю 1й дорослий</p>
+                <div class="inscription">
+                        <div>
+                            <h4>Сліпченко Максим</h4>
+                            <p>3й к’ю<br>1й дорослий</p>
+                        </div>
+                </div>
+            </div>
+            <div class="child">
+                <img src="img/champions/dodevych.jpg" alt="додевич юра">
+                <div class="inscription">
+                    <div>
+                        <h4>Додевич Юра</h4>
+                        <p>2й к’ю<br>2й дорослий</p>
+                    </div>
                 </div>
             </div>
             <div>
-                <img src="img/champions/dodevych.jpg" alt="додевич юра">
-                <div>
-                    <p>Додевич Юра 2й к’ю 2й дорослий</p>
-                </div>
+                <img src="img/champions/right-arrow.png" alt="right-arrow">
             </div>
         </div>
     </article>
     <footer>
-        <img src="img/map.jpg" alt="карта залу у львові">
-        <div>
-            <img src="img/left-arrow.png" alt="стрілка вліво">
-            <p>м. Львів, вул. Вигоди 27
-                НВК “Гроно” (СЗОШ №64)
+        <div id="lviv-contackts">
+            <div class="map-lviv">
+                <img src="img/contacts/map.jpg" alt="карта залу у львові">
+            </div>
+            <div class="info-lviv">
+                <img src="img/contacts/left-arrow.png" alt="стрілка вліво">
+                <p>м. Львів, вул. Вигоди 27<br>
+                НВК “Гроно” (СЗОШ №64)<br>
                 Пн., Ср., Пт. 15:30 - 17:00</p>
+            </div>
         </div>
-        <div>                
-                <p>м. Львів, вул. Січових стрільців 2
-                    Великолюбінська СЗОШ
-                    Вт., Чт. 18:00 - 19:30, Сб. 11:00 - 12:30</p>
-                <img src="img/right-arrow.png" alt="стрілка вліво">
-        </div>
-        <img src="img/map.jpg" alt="карта залу у львові">
-        <form action="https://natalyberezy@gmail.com" method="get">
+        <div id="lubin-contackts">
+            <div class="info-lubin">                
+                <p>м. Львів, вул. Січових стрільців 2<br>
+                Великолюбінська СЗОШ<br>
+                Вт., Чт. 18:00 - 19:30, Сб. 11:00 - 12:30</p>
+                <img src="img/contacts/right-arrow.png" alt="стрілка вліво">
+            </div>
+            <div class="map-lubin">
+                <img src="img/contacts/map-lubin.jpg" alt="карта залу у львові">
+            </div>
+        </div>        
+    </footer>
+    <form action="https://natalyberezy@gmail.com" method="get">
+        <div id="left-side-form">
             <input type="text" name="client-name" placeholder="Як до Вас звертатись"
             required>
-            <br>
             <input type="tel" name="client-phone-number" placeholder="Ваш номер телефону">
-            <br>
             <input type="email" name="client-email" placeholder="Електронна скринька"
             required>
-            <input type="text" name="client-question" placeholder="Ваше запитання">
-            <br>
-            <input type="submit" value="ЗАПИСАТИСЬ">
-        </form>
-    </footer>
+        </div>
+        <div id="right-side-form">
+            <textarea name="client-question" cols="30" rows="10" placeholder="Ваше запитання"></textarea>
+        </div>
+        <input type="submit" value="ЗАПИСАТИСЬ">
+    </form>
 </body>
 </html>
  
