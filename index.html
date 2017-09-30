@@ -19,8 +19,12 @@
                     <li>КОНТАКТИ</li>
                 </ul>
             </nav>
-            <img id="logo" src="img/logo.png" alt="logo-busi-do">
-            <button>ЗАПИСАТИСЬ</button>
+            <div class="logo-flex">
+                <img id="logo" src="img/logo.png" alt="logo-busi-do">
+            </div>
+            <div class="button-flex">
+                <button>ЗАПИСАТИСЬ</button>
+            </div>
         </div>
     </header>
     <article>
@@ -54,7 +58,7 @@
             <div><img src="img/gallery/Warshawa2016.jpg" alt="змагання у варшаві"></div>
         </div>
         <div id="champions">
-            <div>
+            <div class="arrow">
                 <img src="img/champions/left-arrow.png" alt="left-arrow">
             </div>
             <div class="child">
@@ -84,7 +88,7 @@
                     </div>
                 </div>
             </div>
-            <div>
+            <div class="arrow">
                 <img src="img/champions/right-arrow.png" alt="right-arrow">
             </div>
         </div>
@@ -115,17 +119,24 @@
     </footer>
     <form action="https://natalyberezy@gmail.com" method="get">
         <div id="left-side-form">
-            <input type="text" name="client-name" placeholder="Як до Вас звертатись"
+            <input type="text" id="client-name" placeholder="Як до Вас звертатись"
             required>
-            <input type="tel" name="client-phone-number" placeholder="Ваш номер телефону">
-            <input type="email" name="client-email" placeholder="Електронна скринька"
+            <input type="tel" id="client-tel" placeholder="Ваш номер телефону">
+            <input type="email" id="client-email" placeholder="Електронна скринька"
             required>
         </div>
         <div id="right-side-form">
-            <textarea name="client-question" cols="30" rows="10" placeholder="Ваше запитання"></textarea>
+            <textarea id="client-question" cols="30" rows="10" placeholder="Ваше запитання"></textarea>
         </div>
+        <div id="message-box"></div>
         <input type="submit" value="ЗАПИСАТИСЬ">
     </form>
+    
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="js/form.js"></script>
 </body>
 </html>
  
