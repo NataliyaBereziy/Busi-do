@@ -1,0 +1,49 @@
+@media screen and (max-width: 1920px) and (min-width: 1371px) {
+
+    /* header */
+    #banner .menu a {
+        font-size: 1.15em;
+    }    
+
+    #banner .button-flex a {
+        font-size: 1.7em;
+        width: 300px;
+        padding: 16px 0;
+    }
+    
+    /* main page */
+    #main-page ul {
+        font-size: 1.25em;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+
+    #main-content p {
+        font-size: 1.45em;
+        line-height: 1.2em;
+    }
+
+    /* champions */
+    #champions .child .inscription h4 {
+        font-size: 1.6em;
+        line-height: 1.1em;
+    }
+
+    #champions .child .inscription div p {
+        font-size: 1.1em;
+        line-height: 1.2em;
+    }
+
+    /* contacts */
+    .info-lviv p, .info-lubin p {
+        font-size: 1.15em;
+    }
+
+    /* contact form */
+    ::-webkit-input-placeholder {
+        font-size: 1.3em;
+    }
+
+}

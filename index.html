@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="style-busi-do.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="responsive.css">
+    <link rel="stylesheet" type="text/css" href="owl/assets/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="owl/assets/owl.theme.default.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <script src="https://use.fontawesome.com/28b6f16a9b.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Busi-do</title>
@@ -13,17 +17,17 @@
         <div id="banner">
             <nav>
                 <ul class="menu">
-                    <li>ГОЛОВНА</li>
-                    <li>ГАЛЕРЕЯ</li>
-                    <li>НАШІ ЧЕМПІОНИ</li>
-                    <li>КОНТАКТИ</li>
+                    <li><a href="#main-page">головна</a></li>
+                    <li><a href="#gallery">галерея</a></li>
+                    <li><a href="#champions">наші чемпіони</a></li>
+                    <li><a href="#lviv-contacts">контакти</a></li>
                 </ul>
             </nav>
             <div class="logo-flex">
                 <img id="logo" src="img/logo.png" alt="logo-busi-do">
             </div>
             <div class="button-flex">
-                <button>ЗАПИСАТИСЬ</button>
+                <a href="#contact-form">записатись</a>
             </div>
         </div>
     </header>
@@ -57,10 +61,7 @@
             <div><img src="img/gallery/Warshawa.jpg" alt="змагання у варшаві"></div>
             <div><img src="img/gallery/Warshawa2016.jpg" alt="змагання у варшаві"></div>
         </div>
-        <div id="champions">
-            <div class="arrow">
-                <img src="img/champions/left-arrow.png" alt="left-arrow">
-            </div>
+        <div id="champions" class="owl-carousel">
             <div class="child">
                 <img src="img/champions/kravets.jpg" alt="кравець денис">
                 <div class="inscription">
@@ -88,13 +89,66 @@
                     </div>
                 </div>
             </div>
-            <div class="arrow">
-                <img src="img/champions/right-arrow.png" alt="right-arrow">
+
+            <div class="child">
+                <img src="img/champions/kravets.jpg" alt="кравець денис">
+                <div class="inscription">
+                        <div>
+                            <h4>Кравець Денис</h4>
+                            <p>2й к’ю<br>2й дорослий</p>
+                        </div>
+                </div>
+            </div>
+            <div class="child">
+                <img src="img/champions/slipchenko.jpg" alt="сліпченко максим">
+                <div class="inscription">
+                        <div>
+                            <h4>Сліпченко Максим</h4>
+                            <p>3й к’ю<br>1й дорослий</p>
+                        </div>
+                </div>
+            </div>
+            <div class="child">
+                <img src="img/champions/dodevych.jpg" alt="додевич юра">
+                <div class="inscription">
+                    <div>
+                        <h4>Додевич Юра</h4>
+                        <p>2й к’ю<br>2й дорослий</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="child">
+                <img src="img/champions/kravets.jpg" alt="кравець денис">
+                <div class="inscription">
+                        <div>
+                            <h4>Кравець Денис</h4>
+                            <p>2й к’ю<br>2й дорослий</p>
+                        </div>
+                </div>
+            </div>
+            <div class="child">
+                <img src="img/champions/slipchenko.jpg" alt="сліпченко максим">
+                <div class="inscription">
+                        <div>
+                            <h4>Сліпченко Максим</h4>
+                            <p>3й к’ю<br>1й дорослий</p>
+                        </div>
+                </div>
+            </div>
+            <div class="child">
+                <img src="img/champions/dodevych.jpg" alt="додевич юра">
+                <div class="inscription">
+                    <div>
+                        <h4>Додевич Юра</h4>
+                        <p>2й к’ю<br>2й дорослий</p>
+                    </div>
+                </div>
             </div>
         </div>
     </article>
     <footer>
-        <div id="lviv-contackts">
+        <div id="lviv-contacts">
             <div class="map-lviv">
                 <img src="img/contacts/map.jpg" alt="карта залу у львові">
             </div>
@@ -105,7 +159,7 @@
                 Пн., Ср., Пт. 15:30 - 17:00</p>
             </div>
         </div>
-        <div id="lubin-contackts">
+        <div id="lubin-contacts">
             <div class="info-lubin">                
                 <p>м. Львів, вул. Січових стрільців 2<br>
                 Великолюбінська СЗОШ<br>
@@ -117,7 +171,7 @@
             </div>
         </div>        
     </footer>
-    <form action="https://natalyberezy@gmail.com" method="get">
+    <form id="contact-form">
         <div id="left-side-form">
             <input type="text" id="client-name" placeholder="Як до Вас звертатись"
             required>
@@ -131,12 +185,17 @@
         <div id="message-box"></div>
         <input type="submit" value="ЗАПИСАТИСЬ">
     </form>
+
+    <i id="scroll-up" class="fa fa-angle-up fa-4x" aria-hidden="true"></i>
     
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
     crossorigin="anonymous"></script>
+    <script src="js/scroll.js"></script>
     <script src="js/form.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="owl/owl.carousel.min.js"></script>
 </body>
 </html>
  
