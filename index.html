@@ -2,6 +2,7 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style-busi-do.css">
     <link rel="stylesheet" type="text/css" href="responsive.css">
     <link rel="stylesheet" type="text/css" href="owl/assets/owl.carousel.min.css">
@@ -15,13 +16,18 @@
 <body>
     <header>
         <div id="banner">
-            <nav>
-                <ul class="menu">
-                    <li><a href="#main-page">головна</a></li>
-                    <li><a href="#gallery">галерея</a></li>
-                    <li><a href="#champions">наші чемпіони</a></li>
-                    <li><a href="#lviv-contacts">контакти</a></li>
-                </ul>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" href="#main-page">головна</a>
+                        <a class="nav-item nav-link" href="#gallery">галерея</a>
+                        <a class="nav-item nav-link" href="#champions">наші чемпіони</a>
+                        <a class="nav-item nav-link" href="#lviv-contacts">контакти</a>
+                    </div>
+                </div>
             </nav>
             <div class="logo-flex">
                 <img id="logo" src="img/logo.png" alt="logo-busi-do">
@@ -173,17 +179,17 @@
     </footer>
     <form id="contact-form">
         <div id="left-side-form">
-            <input type="text" id="client-name" placeholder="Як до Вас звертатись"
+            <input class="text-input" type="text" id="client-name" placeholder="Як до Вас звертатись"
             required>
-            <input type="tel" id="client-tel" placeholder="Ваш номер телефону">
-            <input type="email" id="client-email" placeholder="Електронна скринька"
+            <input class="text-input" type="tel" id="client-tel" placeholder="Ваш номер телефону">
+            <input class="text-input" type="email" id="client-email" placeholder="Електронна скринька"
             required>
         </div>
         <div id="right-side-form">
-            <textarea id="client-question" cols="30" rows="10" placeholder="Ваше запитання"></textarea>
+            <textarea class="client-question" cols="30" rows="10" placeholder="Ваше запитання"></textarea>
         </div>
         <div id="message-box"></div>
-        <input type="submit" value="ЗАПИСАТИСЬ">
+        <input id="submit-button" type="submit" value="ЗАПИСАТИСЬ">
     </form>
 
     <i id="scroll-up" class="fa fa-angle-up fa-4x" aria-hidden="true"></i>
@@ -192,6 +198,8 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
     crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>   
     <script src="js/scroll.js"></script>
     <script src="js/form.js"></script>
     <script src="js/carousel.js"></script>

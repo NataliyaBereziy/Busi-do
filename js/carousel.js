@@ -10,9 +10,14 @@ $(function() {
         ],
         responsive : {
             0: {
+                center: false,
                 items: 1,
             },
-            768 : {
+            768: {
+                center: false,
+                items: 2,
+            },
+            1051: {
                 items: 3,
             }
         }
