@@ -25,7 +25,7 @@ h3 {
 
 /* Header */
 header {
-    background: url(img/banner.jpg) no-repeat;
+    background: url(../img/banner.jpg) no-repeat;
     background-position: center;
     background-size: cover;
     margin-bottom: 5.859375%;       
@@ -85,6 +85,13 @@ header {
 
 .navbar-collapse {
     flex-basis: unset;
+}
+
+#banner .navbar-toggler {
+    border: 0;
+    outline: none;
+    font-size: 2em;
+    color: #fff;
 }
 
 #banner .button-flex a {
@@ -151,6 +158,7 @@ header {
     margin: 0 0 5.1091832459663%;
     color: #172717;
     font-size: 1em;
+    cursor: pointer;
 }
 
 #main-page li {
@@ -211,9 +219,6 @@ header {
     display: inline-block;
 }
 
-#gallery>div:hover {
-
-}
 #gallery>div>img {
     width: 100%;
 }
@@ -462,4 +467,5 @@ footer {
     box-sizing: border-box;
     cursor: pointer;
     display: none;
+    z-index: 1;
 }
