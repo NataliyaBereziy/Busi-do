@@ -82,12 +82,12 @@
     }
 
     /* gallery */
-    #gallery {
+    #gallery-id {
         display: flex;
         flex-wrap: wrap;
     }
 
-    #gallery>div {
+    #gallery-id>div {
         flex-basis: 100%;
     }
 
@@ -208,12 +208,12 @@
     }
 
     /* gallery */
-    #gallery {
+    #gallery-id {
         display: flex;
         flex-wrap: wrap;
     }
 
-    #gallery>div {
+    #gallery-id>div {
         flex-basis: 50%;
     }
 

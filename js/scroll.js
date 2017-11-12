@@ -9,7 +9,7 @@ $(function() {
 
     $(document).scroll(function() {
         const y = $(this).scrollTop();
-        const elementY = $('#gallery').offset().top;
+        const elementY = $('#gallery-id').offset().top;
 
         if (y > elementY) {
         $('#scroll-up').fadeIn();
